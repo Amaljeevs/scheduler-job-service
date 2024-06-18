@@ -11,8 +11,8 @@ import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.alfaris.schedulerservice.cache.LRUCache;
 import com.alfaris.schedulerservice.entity.DistributedLock;
-import com.alfaris.schedulerservice.job.LRUCache;
 import com.alfaris.schedulerservice.repository.DistributedLockRepository;
 
 @Service

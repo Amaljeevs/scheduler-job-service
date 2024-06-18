@@ -1,4 +1,4 @@
-package com.alfaris.schedulerservice.job;
+package com.alfaris.schedulerservice.cache;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
