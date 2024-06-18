@@ -36,38 +36,4 @@ public class TestController {
 
 	}
 
-	@PostMapping("/createLitCisCust")
-	public CustAddLiteResponse createCustomer(@RequestBody CustAddLiteRequest request) {
-		try {
-			System.out.println("request ::" + request);
-			CustAddLiteResponse responseObj = new CustAddLiteResponse();
-			CustAddLiteRsHeader responseHeader = new CustAddLiteRsHeader();
-			responseHeader.setChannelId(request.getRiyadBankHeader().getChannelId());
-			responseHeader.setCisNumber(request.getRiyadBankHeader().getCisNumber());
-			responseHeader.setDeviceId(request.getRiyadBankHeader().getDeviceId());
-			responseHeader.setFunctionId(request.getRiyadBankHeader().getFunctionId());
-			responseHeader.setIpAddress(request.getRiyadBankHeader().getIpAddress());
-			responseHeader.setIsReversal("false");
-			responseHeader.setLanguage(request.getRiyadBankHeader().getLanguage());
-			responseHeader.setMessageVersion(request.getRiyadBankHeader().getMessageVersion());
-			responseHeader.setOrganizationId(request.getRiyadBankHeader().getOrganizationId());
-			responseHeader.setReferenceNumber(request.getRiyadBankHeader().getReferenceNumber());
-			responseHeader.setReplyDateTime(request.getRiyadBankHeader().getReplyDateTime());
-			responseHeader.setReqDateTime(request.getRiyadBankHeader().getReqDateTime());
-			responseHeader.setReversalReferenceNumber(request.getRiyadBankHeader().getReversalReferenceNumber());
-			responseHeader.setServiceName(request.getRiyadBankHeader().getServiceName());
-			responseHeader.setStatusCode(request.getRiyadBankHeader().getStatusCode());
-			responseHeader.setStatusDescAr(request.getRiyadBankHeader().getStatusDescAr());
-			responseHeader.setStatusDescEn(request.getRiyadBankHeader().getStatusDescEn());
-			responseHeader.setTransactionKey(request.getRiyadBankHeader().getTransactionKey());
-			responseHeader.setUserId(request.getRiyadBankHeader().getUserId());
-			responseHeader.setUserLocation(request.getRiyadBankHeader().getUserLocation());
-			responseObj.setRiyadBankHeader(responseHeader);
-			return responseObj;
-		} catch (Exception e) {
-			return null;
-		}
-
-	}
-
 }
