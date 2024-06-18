@@ -8,10 +8,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.alfaris.esb.dto.CustAddLiteRequest;
-import com.alfaris.esb.dto.CustAddLiteResponse;
-import com.alfaris.esb.dto.CustAddLiteRsHeader;
-import com.alfaris.esb.dto.ResponseRiyadBankHeader;
 import com.alfaris.schedulerservice.entity.PshSchedulerTest;
 import com.alfaris.schedulerservice.repository.PshSchedulerTestRepository;
 import com.fasterxml.jackson.databind.ObjectMapper;
