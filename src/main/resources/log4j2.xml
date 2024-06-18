@@ -10,7 +10,7 @@
 				pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
 		</Console>
 		<RollingFile name="LogToFileTrace"
-			fileName="${APP_LOG_ROOT}/psh-quartsscheduler-service3/application.log"
+			fileName="${APP_LOG_ROOT}/psh-quartsscheduler-service1/application.log"
 			filePattern="${APP_LOG_ROOT}/psh-quartsscheduler-service3/application-%d{yyyy-MM-dd}-%i.log">
 			<PatternLayout>
 				<Pattern>%d{yyyy-MM-dd HH:mm:ss} %-5p %m%n</Pattern>
